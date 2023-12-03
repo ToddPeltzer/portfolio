@@ -1,0 +1,134 @@
+.name,
+.type,
+.abilities {
+    text-transform: capitalize;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.pokedex-container {
+    position: relative;
+    width: 60%;
+    height: 45rem;
+    background-color: #ED1C24;
+    border: 3px solid black;
+    border-radius: 7px;
+}
+
+.left-container {
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 45%;
+    background-color: #FE363C;
+    border: 3px solid black;
+    border-radius: 7px;
+}
+
+.top-left-screen {
+    position: relative;
+    left: 3%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 93%;
+    background-color: #FFFFFF;
+    border: 3px solid black;
+    top: 34%;
+    z-index: 1;
+}
+
+.top-left-screen::before {
+    position: absolute;
+    content: '';
+    left: -2.2%;
+    transform: translateY(-50%);
+    height: 104%;
+    width: 103.5%;
+    border: 3px solid black;
+    top: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.top-left-screen::after {
+    position: absolute;
+    content: '';
+    left: -1.7%;
+    transform: translateY(-50%);
+    height: 101%;
+    width: 101.1%;
+    border: 6px solid #C5C5C5;
+    top: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.top-left-screen img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-left-screen {
+    position: absolute;
+    left: 3%;
+    transform: translateY(-50%);
+    height: 17%;
+    width: 93%;
+    background-color: #FFFFFF;
+    border: 3px solid black;
+    bottom: -2%;
+}
+
+.right-container {
+    position: absolute;
+    top: 52%;
+    right: 2%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 45%;
+    background-color: #FE363C;
+    border: 3px solid black;
+    border-radius: 7px;
+}
+
+.right-screen {
+    position: absolute;
+    left: 3%;
+    transform: translateY(-50%);
+    height: 85%;
+    width: 93%;
+    background-color: #FFFFFF;
+    border: 3px solid black;
+    top: 50%;
+    border-radius: 7px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+.search-container button {
+    background-color: #00A2E8;
+    box-shadow: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+.search-container input {
+    margin-left: 1rem;
+    border: none;
+    padding: 0.5rem;
+}

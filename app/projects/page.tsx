@@ -1,7 +1,11 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Projects() {
   return (
-    <main>Projects</main>
+    <main>
+      <Link href='/projects/pokedex'>Pokedex</Link>
+      <Link href='/projects/space-trivia'>Space Trivia</Link>
+    </main>
   )
 }
